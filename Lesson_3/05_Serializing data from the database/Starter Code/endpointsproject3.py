@@ -71,7 +71,7 @@ def updatePuppy(id,name, description):
   if not name:
     puppy.name = name
   if not description:
-    puppy.description = description
+    puppy.description = name
   session.add(puppy)
   session.commit()
   return "Updated a Puppy with id %s" % id
